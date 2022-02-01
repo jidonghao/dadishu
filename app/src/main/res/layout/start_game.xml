@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bck_startgame"
+    tools:context=".start_game"
+    >
+
+    <VideoView
+        android:id="@+id/startGamevideo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bck_startgamevideofirstpic"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </VideoView>
+
+    <Spinner
+        android:id="@+id/spinner_nandu_change"
+        android:layout_width="123dp"
+        android:layout_height="58dp"
+        android:layout_marginLeft="348dp"
+        android:layout_marginTop="252dp"
+        android:entries="@array/nandu_change"
+        android:theme="@style/spinner_style"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </Spinner>
+
+    <Button
+        android:id="@+id/btn_startGame"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="340dp"
+        android:layout_marginTop="332dp"
+        android:background="@drawable/bck_startgamebtn"
+        android:stateListAnimator="@null"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="nandu_change">
+        <item>简单</item>
+        <item>普通</item>
+        <item>困难</item>
+    </string-array>
+</resources>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e1111111"
+
+    tools:context=".game_page_tishi"
+    >
+
+    <FrameLayout
+        android:id="@+id/tishiMenu"
+        android:layout_width="823dp"
+        android:layout_height="390dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/tishiMenuTextview"
+            android:layout_width="400dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center|bottom"
+            android:background="@drawable/btn_yuanjiao_white"
+            android:paddingTop="55dp"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="48sp">
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/gamePageTishi_win"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginLeft="260dp"
+            android:layout_marginTop="-20dp"
+            android:background="@drawable/mousewin"
+            android:visibility="gone"
+            >
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/gamePageTishi_de"
+            android:layout_width="298dp"
+            android:layout_height="295dp"
+            android:layout_marginLeft="260dp"
+            android:layout_marginTop="-10dp"
+            android:background="@drawable/mouseshibai"
+            android:visibility="gone"
+            >
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/tishiMenuFenShu"
+            android:layout_width="323dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="281dp"
+            android:text="得分：20"
+            android:textAlignment="center"
+            android:textSize="20sp">
+
+
+        </TextView>
+
+
+        <Button
+            android:id="@+id/btn_game_tishi_fanhuishouye"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="310dp"
+            android:background="@drawable/btn_yuanjiao_pink"
+            android:text="返回首页"
+            android:textColor="#fff"
+            android:textSize="24sp">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btn_game_tishi_jixuyouxi"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="420dp"
+            android:layout_marginTop="310dp"
+            android:background="@drawable/btn_yuanjiao_dogeblue"
+            android:text="继续游戏"
+            android:textColor="#fff"
+            android:textSize="24sp">
+
+        </Button>
+        <TextView
+            android:id="@+id/gamePageTishiDaojishi"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="310dp"
+            android:layout_marginLeft="385dp"
+            android:textAlignment="center"
+            android:text="5"
+            android:textSize="36sp"
+            android:padding="1dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/btn_yuanjiao_dogeblue"
+            >
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/btn_tiaoguo"
+            android:visibility="gone"
+            android:layout_width="426px"
+            android:layout_height="188px"
+            android:layout_marginLeft="650dp"
+            android:layout_marginTop="320dp"
+            android:background="@drawable/gamepagetishiarrow">
+
+        </ImageView>
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

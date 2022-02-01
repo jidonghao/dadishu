@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bck_startgame"
+    tools:context=".start_game"
+    >
+
+    <VideoView
+        android:id="@+id/startGamevideo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bck_startgame"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </VideoView>
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="298dp"
+        android:layout_height="29dp"
+        android:layout_marginLeft="260dp"
+        android:layout_marginTop="270dp"
+
+        android:gravity="left"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/radioJiandan"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:checked="true"
+            android:gravity="left|center"
+            android:text="简单"
+            android:textSize="20sp">
+
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/radioPutong"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+
+            android:gravity="left|center"
+            android:text="普通"
+            android:textSize="20sp">
+
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/radioKunnan"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:gravity="left|center"
+            android:text="困难"
+            android:textSize="20sp">
+
+        </RadioButton>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_startGame"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="340dp"
+        android:layout_marginTop="332dp"
+        android:background="@drawable/bck_startgamebtn"
+        android:stateListAnimator="@null"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

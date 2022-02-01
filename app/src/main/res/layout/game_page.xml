@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bkg_main"
+    tools:context=".game_page">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="183dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/game_page_bck_1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+    <ImageView
+        android:id="@+id/mouse1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="176dp"
+        android:layout_marginTop="180dp"
+
+        android:background="@drawable/game_page_mouse1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+
+    <ImageView
+        android:id="@+id/mouse2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="504dp"
+        android:layout_marginTop="180dp"
+
+        android:background="@drawable/game_page_mouse1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageView>
+
+    <ImageView
+        android:layout_width="822dp"
+        android:layout_height="155dp"
+        android:layout_marginTop="471px"
+        android:background="@drawable/game_page_bck_2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+
+    <ImageView
+        android:id="@+id/mouse3"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="336dp"
+        android:layout_marginTop="288dp"
+        android:background="@drawable/game_page_mouse1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageView>
+
+    <ImageView
+        android:layout_width="821dp"
+        android:layout_height="153dp"
+        android:layout_marginTop="840px"
+        android:background="@drawable/game_page_bck_3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+    <ImageView
+        android:id="@+id/mouse4"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="176dp"
+        android:layout_marginTop="400dp"
+        android:background="@drawable/game_page_mouse1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/mouse5"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="504dp"
+        android:layout_marginTop="400dp"
+        android:background="@drawable/game_page_mouse1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageView>
+
+    <ImageView
+        android:layout_width="821dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="1206px"
+        android:background="@drawable/game_page_bck_4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageView>
+
+
+    <!--左上角生命值-->
+    <ImageView
+        android:id="@+id/game_page_xin1"
+        android:layout_width="126px"
+        android:layout_height="112px"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/game_page_xinxin"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+
+    <ImageView
+        android:id="@+id/game_page_xin3"
+        android:layout_width="126px"
+        android:layout_height="112px"
+        android:layout_marginLeft="136dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/game_page_xinxin"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/game_page_xin2"
+        android:layout_width="126px"
+        android:layout_height="112px"
+        android:layout_marginLeft="88dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/game_page_xinxin"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/textView_nandu"
+        android:layout_width="89dp"
+        android:layout_height="54dp"
+        android:layout_marginLeft="472dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/btn_yuanjiao_white"
+        android:gravity="center"
+        android:lineHeight="61dp"
+        android:text="普通"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </TextView>
+    <TextView
+        android:id="@+id/textView_time"
+        android:layout_width="89dp"
+        android:layout_height="54dp"
+        android:layout_marginLeft="568dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/btn_yuanjiao_white"
+        android:gravity="center"
+        android:lineHeight="61dp"
+        android:text="10s"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/textView_fenshu"
+        android:layout_width="89dp"
+        android:layout_height="54dp"
+        android:layout_marginLeft="664dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/btn_yuanjiao_white"
+        android:gravity="center"
+        android:lineHeight="61dp"
+        android:text="0分"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+<!--    <Button-->
+<!--        android:id="@+id/btn_game_zanting"-->
+<!--        android:layout_width="56dp"-->
+<!--        android:layout_height="55dp"-->
+<!--        android:layout_marginLeft="760dp"-->
+<!--        android:layout_marginTop="4dp"-->
+<!--        android:background="@drawable/game_page_btn"-->
+<!--        android:stateListAnimator="@null"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"></Button>-->
+
+    <Button
+        android:id="@+id/btnMouse1"
+        android:layout_width="97dp"
+        android:layout_height="98dp"
+        android:layout_marginLeft="204dp"
+        android:layout_marginTop="68dp"
+        android:background="#00000000"
+        android:stateListAnimator="@null"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </Button>
+
+    <Button
+        android:id="@+id/btnMouse2"
+        android:layout_width="97dp"
+        android:layout_height="98dp"
+        android:layout_marginLeft="528dp"
+        android:layout_marginTop="68dp"
+        android:background="#00000000"
+        android:stateListAnimator="@null"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </Button>
+
+    <Button
+        android:id="@+id/btnMouse3"
+        android:layout_width="97dp"
+        android:layout_height="98dp"
+        android:layout_marginLeft="365dp"
+        android:layout_marginTop="180dp"
+        android:background="#00000000"
+        android:stateListAnimator="@null"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </Button>
+
+
+    <Button
+        android:id="@+id/btnMouse4"
+        android:layout_width="97dp"
+        android:layout_height="98dp"
+        android:layout_marginLeft="204dp"
+        android:layout_marginTop="288dp"
+        android:background="#00000000"
+        android:stateListAnimator="@null"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </Button>
+
+    <Button
+        android:id="@+id/btnMouse5"
+        android:layout_width="97dp"
+        android:layout_height="98dp"
+        android:layout_marginLeft="528dp"
+        android:layout_marginTop="276dp"
+        android:background="#00000000"
+        android:stateListAnimator="@null"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </Button>
+
+
+    <TextView
+        android:id="@+id/gamePageDaoJiShi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#aa111111"
+        android:text="3"
+        android:padding="60dp"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="200sp"
+
+        >
+    </TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
