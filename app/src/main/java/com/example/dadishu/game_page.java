@@ -149,13 +149,6 @@ public class game_page extends Activity {
         mouse2 = findViewById(R.id.mouse3);
         mouse3 = findViewById(R.id.mouse4);
         mouse4 = findViewById(R.id.mouse5);
-//想用数组替代 不管弧
-//        mouse[0] = mouse0;
-//        mouse[1] = mouse1;
-//        mouse[2] = mouse2;
-//        mouse[3] = mouse3;
-//        mouse[4] = mouse4;
-
 
 //难度改变 根据 startgame 中选择的难度进行更改
 
@@ -234,25 +227,13 @@ public class game_page extends Activity {
         //老鼠对应的点击完成
 //
         startMouseDisplay();//让老鼠出现
-
-        //暂停按钮
-//        btn_game_zanting.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                game_page_tishi.setTishiView("游戏暂停", -1, "返回首页", "继续游戏");
-//                Intent go_gamePage_tishi = new Intent(game_page.this, game_page_tishi.class);
-//                go_gamePage_tishi.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP);
-//                startActivity(go_gamePage_tishi);
-//            }
-//        });
     }
 
 
     /***************
-     * 函数名称：setGamePageTishi();
+     * 函数名称：setGamePageTishi
      * 函数功能：让提示页面出现，显示游戏结束的页面
-     *
-     */
+     ****************/
     private void setGamePageTishi(boolean flag) {
 
         timer_mouseDisplay.cancel();
@@ -276,10 +257,9 @@ public class game_page extends Activity {
     }
 
     /********
-     * 函数名称：startMouseDisplay()
+     * 函数名称：startMouseDisplay
      * 函数随机让mouse出现
      */
-    //定时器，定时老鼠出现
     public void startMouseDisplay() {
         timerDaojishi.schedule(new TimerTask() {
             @Override
@@ -436,11 +416,10 @@ public class game_page extends Activity {
     }
 
     /*****************************************
-     *  函数名称：changeShengming()
+     *  函数名称：changeShengming
      *  左上角心数量更改
      *  num=1,2,3
      * *****************************************/
-
     public void changeShengming(boolean flag) {
         System.out.println(" 左上角心数量更改:flag:"+flag+"; setXinFlag:"+setXinFlag);
         if (flag && setXinFlag) {
@@ -501,34 +480,29 @@ public class game_page extends Activity {
                 case 0:
                     mouse0.clearAnimation();
                     handler0.removeCallbacks(runnable0);// 点击时应将延时器关闭
-//                    timer0.cancel();
                     break;
                 case 1:
                     mouse1.clearAnimation();
                     handler1.removeCallbacks(runnable1);// 点击时应将延时器关闭
-//                    timer1.cancel();
                     break;
                 case 2:
                     mouse2.clearAnimation();
                     handler2.removeCallbacks(runnable2);// 点击时应将延时器关闭
-//                    timer2.cancel();
                     break;
                 case 3:
                     mouse3.clearAnimation();
                     handler3.removeCallbacks(runnable3);// 点击时应将延时器关闭
-//                    timer3.cancel();
                     break;
                 case 4:
                     mouse4.clearAnimation();
                     handler4.removeCallbacks(runnable4);// 点击时应将延时器关闭
-//                    timer4.cancel();
                     break;
             }
         }
     }
 
     /**************************
-     *函数名称：setFenShu()
+     *函数名称：setFenShu
      *函数功能 加分或显示0
      * flag = true:加分模式，false:重置
      */
