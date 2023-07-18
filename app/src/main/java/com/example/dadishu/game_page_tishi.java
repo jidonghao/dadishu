@@ -24,14 +24,14 @@ public class game_page_tishi extends Activity {
     public TextView textViewGameOver, textViewFenShu;
     public static String title = "游戏结束", btn1 = "返回首页", btn2 = "再来一次";
     public static int fenShu;
-public static boolean FlageWinDe;
+    public static boolean FlageWinDe;
     static ImageView imageViewWin,imageViewDe;//胜利失败的图片
 
-int daojishi = 5;
-
-ImageView btn_ImageView;
+    int daojishi = 5;
+    
+    ImageView btn_ImageView;
     Timer timer =new Timer();
-TextView gamePageTishiDaojishi;
+    TextView gamePageTishiDaojishi;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,7 +43,7 @@ TextView gamePageTishiDaojishi;
         window.setAttributes(params);
         setContentView(R.layout.game_page_tishi);
 
-//        tishiKuang = findViewById(R.id.tishiMenu);//显示暂停和结束游戏的窗口
+        tishiKuang = findViewById(R.id.tishiMenu);//显示暂停和结束游戏的窗口
         tishi_btn_1 = findViewById(R.id.btn_game_tishi_fanhuishouye);//leftButton
         tishi_btn_2 = findViewById(R.id.btn_game_tishi_jixuyouxi);//rightButton
 
