@@ -30,8 +30,8 @@ public class start_game extends AppCompatActivity {
     Button btn_startGame;
     public static int gamenandu = 1;//存储难度
 
-    public static boolean startVideoFlag = true;//声明是否播放视频的flag
-    VideoView startGameVideo;//开始游戏选难度也就是首页的视频
+    public static boolean startVideoFlag = true;        //声明是否播放视频的flag
+    VideoView startGameVideo;                        //开始游戏选难度也就是首页的视频
 
     //    单选按钮
     RadioGroup radioGroup_group;
@@ -48,7 +48,7 @@ public class start_game extends AppCompatActivity {
 
         setContentView(R.layout.start_game);
 
-//设置video
+        //设置video
         startGameVideo = findViewById(R.id.startGamevideo);
         startGameVideo.setVisibility(View.VISIBLE);
         startGameVideo.setVideoURI(Uri.parse("android.resource://" + getPackageName() + "/raw/startgamevideo"));
@@ -80,7 +80,7 @@ public class start_game extends AppCompatActivity {
                     runOnUiThread(new Runnable() {
                         @Override
                         public void run() {
-//                            startGameVideo.setVisibility(View.GONE);
+                            //startGameVideo.setVisibility(View.GONE);
                         }
                     });
                 }
@@ -109,13 +109,8 @@ public class start_game extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent_gamePage = new Intent(start_game.this, game_page.class);
                 startActivity(intent_gamePage);
-
             }
         });
-
-
-
-
     }
 
 }
