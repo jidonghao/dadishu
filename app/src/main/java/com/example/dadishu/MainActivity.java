@@ -46,15 +46,14 @@ public class MainActivity extends AppCompatActivity {
                 });
             }
         });
-//延时
+        //延时
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
                 Animation lAnimation = AnimationUtils.loadAnimation(MainActivity.this, R.anim.alpha_donghua);
                 video_shouye.startAnimation(lAnimation);//加动画
-                Intent qudenglu = new Intent(MainActivity.this, Login.class);
-                startActivity(qudenglu);
+                startActivity(new Intent(MainActivity.this, Login.class));
             }
-        }, 8000);    // 应该8000 为了debug方便，延迟时间为原视频加500
+        }, 8000);
     }
 }

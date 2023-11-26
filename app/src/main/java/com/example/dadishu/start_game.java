@@ -6,6 +6,7 @@
 
 package com.example.dadishu;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.Color;
 import android.media.MediaPlayer;
@@ -15,24 +16,18 @@ import android.os.Handler;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
-import android.widget.AdapterView;
 import android.widget.Button;
-import android.widget.RadioButton;
 import android.widget.RadioGroup;
-import android.widget.Spinner;
 import android.widget.VideoView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class start_game extends AppCompatActivity {
     Button btn_startGame;
-    public static int gamenandu = 1;//存储难度
+    public static int gameDifficult = 1;//存储难度
 
     public static boolean startVideoFlag = true;        //声明是否播放视频的flag
     VideoView startGameVideo;                        //开始游戏选难度也就是首页的视频
-
     //    单选按钮
     RadioGroup radioGroup_group;
 
@@ -45,7 +40,6 @@ public class start_game extends AppCompatActivity {
         WindowManager.LayoutParams params = window.getAttributes();
         params.systemUiVisibility = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_IMMERSIVE;
         window.setAttributes(params);
-
         setContentView(R.layout.start_game);
 
         //设置video
@@ -72,7 +66,6 @@ public class start_game extends AppCompatActivity {
 
         if (startVideoFlag) {
             startGameVideo.start();
-            System.out.println("startgame视频开始播放了");
             startVideoFlag = false;
             new Handler().postDelayed(new Runnable() {
                 @Override
@@ -88,17 +81,18 @@ public class start_game extends AppCompatActivity {
         }
         radioGroup_group = findViewById(R.id.radioGroup1);
         radioGroup_group.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @SuppressLint("NonConstantResourceId")
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 switch(checkedId){
                     case R.id.radioJiandan:
-                        gamenandu = 1;
+                        gameDifficult = 1;
                         break;
                     case R.id.radioPutong:
-                        gamenandu = 2;
+                        gameDifficult = 2;
                         break;
                     case R.id.radioKunnan:
-                        gamenandu = 3;
+                        gameDifficult = 3;
                         break;
                 }
             }

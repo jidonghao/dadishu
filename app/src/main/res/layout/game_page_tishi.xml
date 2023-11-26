@@ -58,7 +58,8 @@
             android:layout_marginTop="281dp"
             android:text="得分：20"
             android:textAlignment="center"
-            android:textSize="20sp">
+            android:textSize="20sp"
+            android:gravity="center_horizontal">
 
 
         </TextView>
@@ -101,7 +102,7 @@
             android:padding="1dp"
             android:textColor="#ffffff"
             android:background="@drawable/btn_yuanjiao_dogeblue"
-            >
+            android:gravity="center_horizontal">
 
         </TextView>
 
